@@ -2,11 +2,11 @@
  
 int main()    
 {    
-   int n,sum=0,m;    
+   int n,sum=0;    
    printf("Enter a number:");    
    scanf("%d",&n);    
    while(n>0)    
-      {    
+      {  static int m; 
          m=n%10;    
          sum=sum+m;    
          n=n/10;    
